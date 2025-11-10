@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Rinrin 💜</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sparkle-bg"></div>
+
+  <div class="kalkulator">
+    <h2 class="judul">Kalkulator Rinrin 💜</h2>
+    <input type="text" id="layar" class="layar" disabled>
+
+    <div class="tombol-container">
+      <button class="tombol" onclick="tambahAngka('7')">7</button>
+      <button class="tombol" onclick="tambahAngka('8')">8</button>
+      <button class="tombol" onclick="tambahAngka('9')">9</button>
+      <button class="tombol operator" onclick="tambahAngka('/')">÷</button>
+
+      <button class="tombol" onclick="tambahAngka('4')">4</button>
+      <button class="tombol" onclick="tambahAngka('5')">5</button>
+      <button class="tombol" onclick="tambahAngka('6')">6</button>
+      <button class="tombol operator" onclick="tambahAngka('*')">×</button>
+
+      <button class="tombol" onclick="tambahAngka('1')">1</button>
+      <button class="tombol" onclick="tambahAngka('2')">2</button>
+      <button class="tombol" onclick="tambahAngka('3')">3</button>
+      <button class="tombol operator" onclick="tambahAngka('-')">−</button>
+
+      <button class="tombol" onclick="tambahAngka('0')">0</button>
+      <button class="tombol back" onclick="hapusSatu()">⌫</button>
+      <button class="tombol hasil" onclick="hitung()">=</button>
+      <button class="tombol operator" onclick="tambahAngka('+')">+</button>
+
+      <button class="tombol clear" onclick="hapus()">C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
