@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3e8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sparkle-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, #f5e1ff, transparent 70%),
+              radial-gradient(circle at 80% 80%, #e9d5ff, transparent 70%),
+              radial-gradient(circle at 50% 50%, #f0e7ff, transparent 70%);
+  animation: berkilau 6s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes berkilau {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.3); }
+}
+
+.kalkulator {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(160, 104, 255, 0.3);
+  width: 300px;
+  text-align: center;
+  animation: muncul 0.8s ease;
+}
+
+@keyframes muncul {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.judul {
+  font-family: 'Fredoka One', cursive;
+  color: #7c3aed;
+  font-size: 22px;
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 2px #d8b4fe;
+}
+
+.layar {
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  text-align: right;
+  margin-bottom: 15px;
+  border: 2px solid #c4b5fd;
+  border-radius: 12px;
+  padding-right: 10px;
+  background-color: #f5f3ff;
+  box-shadow: inset 0 0 5px #ddd;
+}
+
+.tombol-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.tombol {
+  font-family: 'Fredoka One', cursive;
+  width: 60px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #e9d5ff;
+  color: #4b0082;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 0 #c4b5fd;
+}
+
+.tombol:hover {
+  background-color: #d8b4fe;
+}
+
+.tombol:active {
+  transform: scale(0.9);
+  box-shadow: 0 1px 0 #a78bfa;
+}
+
+.operator {
+  background-color: #c4b5fd;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #a78bfa;
+}
+
+.hasil {
+  background-color: #a78bfa;
+  color: white;
+  font-weight: bold;
+}
+
+.hasil:hover {
+  background-color: #8b5cf6;
+}
+
+.clear {
+  background-color: #f9a8d4;
+  color: white;
+  grid-column: span 4;
+  width: 90%;
+}
+
+.clear:hover {
+  background-color: #f472b6;
+}
+
+.back {
+  background-color: #fbcfe8;
+}
+
+.back:hover {
+  background-color: #f9a8d4;
+}
